@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>MeigoHost</title>
+    <link rel="shortcut icon" href="https://migo.meigo.fun/logo/m.png" />
+
+    <!-- EXTERNAL CSS -->
+    <link href="//panel.byethost.com/res/style.php" rel="stylesheet" type="text/css" />
+
+    <!--[if IE 6]>
+    <style type="text/css">
+        img {
+            behavior: url(/res/cp_pngbehavior_login.htc);
+        }
+    </style>
+    <![endif]-->
+
+    <script>
+    window.DOM = { get: function(id) { return document.getElementById(id) } };
+    </script>
+</head>
+<body>
+
+
+<input type="hidden" id="dest_uri" value="/" />
+
+<div id="login-wrapper" class="login-whisp">
+    <div id="notify">
+        <noscript>
+            <div class="error-notice">
+                <img src="//panel.byethost.com/res/images/notice-error.png" alt="Error" align="left"/>
+                JavaScript is disabled in your browser.
+                For VP to function properly, you must enable JavaScript.
+                If you do not enable JavaScript, certain features in VP will not function correctly.
+            </div>
+			</noscript>
+
+        <div id='login-status' class="error-notice" style="visibility: hidden">
+            <span class='login-status-icon'></span>
+            <div id="login-status-message">You have logged out.</div>
+        </div>
+    </div>
+
+    <div style="display:none">
+        <div id="locale-container" style="visibility:hidden">
+            <div id="locale-inner-container">
+                <div id="locale-header">
+                    <div class="locale-head">Please select a locale:</div>
+                    <div class="close"><a href="javascript:void(0)" onclick="toggle_locales(false)">X Close</a></div>
+                </div>
+                <div id="locale-map">
+                    <div class="scroller clear">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content-container">
+        <div id="login-container">
+            <div id="login-sub-container">
+                <div id="login-sub-header">
+                    <img height='60' width='225' src="https://migo.meigo.fun/logo/m.png" alt="logo" />
+                </div>
+                <div id="login-sub">
+                    <div id="forms">
+
+                        
+                        <form id="login_form" action="login.php" method="post" target="_top">
+                            <div class="input-req-login"><label for="user">Username</label></div>
+                            <div class="input-field-login icon username-container">
+                                <input name="uname" id="user" autofocus="autofocus" value="" placeholder="Enter your username." class="std_textbox" type="text"  tabindex="1" required>
+                            </div>
+                            <div style="margin-top:30px;" class="input-req-login"><label for="pass">Password</label></div>
+                            <div class="input-field-login icon password-container">
+                                <input type="password" name="passwd" id="pass" placeholder="Enter your account password." class="std_textbox" tabindex="2"  required>
+
+                            </div>
+
+		            <div style="width: 285px;">
+                            <div class="login-btn">
+			                <input type='hidden' name='seeesurf' value='199698035474231168'>
+                          <select size="1" name="theme">
+                          <option selected>PaperLantern</option>
+                          </select>
+                                    <button name="login" type="submit" id="login_submit" tabindex="3">Log in</button>
+                                </div>
+                                                            </div>
+                            <div class="clear" id="push"></div>
+                    <!--CLOSE forms -->
+                    </div>
+
+                <!--CLOSE login-sub -->
+                </div>
+            <!--CLOSE login-sub-container -->
+            </div>
+        <!--CLOSE login-container -->
+        </div>
+
+        <div id="locale-footer">
+            <div class="locale-container">
+                <ul id="locales_list">
+<div class="input-req-login"><label for="user">Language&nbsp;</label>
+<select size="1" name="language">
+		    
+		    <option selected="selected" value="English">Auto: English</option>
+<option>Afrikaans</option>
+<option>Albanian</option>
+<option>Amharic</option>
+<option>Arabic</option>
+<option>Armenian</option>
+<option>Azeerbaijani</option>
+<option>Basque</option>
+<option>Belarusian</option>
+<option>Bengali</option>
+<option>Bosnian</option>
+<option>Bulgarian</option>
+<option>Burmese</option>
+<option>Catalan</option>
+<option>Cebuano</option>
+<option>Chichewa</option>
+<option>Chinese_simplified</option>
+<option>Chinese_traditional</option>
+<option>Corsican</option>
+<option>Croatian</option>
+<option>Czech</option>
+<option>Danish</option>
+<option>Dutch</option>
+<option>English</option>
+<option>Esperanto</option>
+<option>Estonian</option>
+<option>Farsi</option>
+<option>Filipino</option>
+<option>Finnish</option>
+<option>French</option>
+<option>Frisian</option>
+<option>Galician</option>
+<option>Georgian</option>
+<option>German</option>
+<option>Greek</option>
+<option>Gujarati</option>
+<option>Haitian Creole</option>
+<option>Hausa</option>
+<option>Hawaiian</option>
+<option>Hebrew</option>
+<option>Hindi</option>
+<option>Писюнски</option>
+<option>Hungarian</option>
+<option>Icelandic</option>
+<option>Igbo</option>
+<option>Indonesian</option>
+<option>Irish</option>
+<option>Italian</option>
+<option>Japanese</option>
+<option>Javanese</option>
+<option>Kannada</option>
+<option>Kazakh</option>
+<option>Khmer</option>
+<option>Korean</option>
+<option>Kurdish</option>
+<option>Kyrgyz</option>
+<option>Lao</option>
+<option>Latin</option>
+<option>Latvian</option>
+<option>Lithuanian</option>
+<option>Luxembourgish</option>
+<option>Macedonian</option>
+<option>Malagasy</option>
+<option>Malay</option>
+<option>Malayalam</option>
+<option>Maltese</option>
+<option>Maori</option>
+<option>Marathi</option>
+<option>Mongolian</option>
+<option>Nepali</option>
+<option>Norwegian</option>
+<option>Pashto</option>
+<option>Persian</option>
+<option>Polish</option>
+<option>Portuguese</option>
+<option>Punjabi</option>
+<option>Romanian</option>
+<option>Russian</option>
+<option>Samoan</option>
+<option>Scots Gaelic</option>
+<option>Serbian</option>
+<option>Sesotho</option>
+<option>Shona</option>
+<option>Sindhi</option>
+<option>Sinhala</option>
+<option>Slovak</option>
+<option>Slovenian</option>
+<option>Somali</option>
+<option>Spanish</option>
+<option>Sundanese</option>
+<option>Swahili</option>
+<option>Swedish</option>
+<option>Tajik</option>
+<option>Tamil</option>
+<option>Telugu</option>
+<option>Thai</option>
+<option>Turkish</option>
+<option>Ukrainian</option>
+<option>Urdu</option>
+<option>Uzbek</option>
+<option>Vietnamese</option>
+<option>Welsh</option>
+<option>Xhosa</option>
+<option>Yiddish</option>
+<option>Yoruba</option>
+<option>Zulu</option>
+
+		    </select>
+			<br/><br/><a href="#">Lost Password (not working)</a>
+</div>
+  </form>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--Close login-wrapper -->
+</div>
+
+
+
+</body>
+
+</html>
